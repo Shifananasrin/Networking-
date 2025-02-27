@@ -1,0 +1,23 @@
+echo "Enter a number"
+read num
+
+original_num=$num  # Store the original number
+
+fact=1
+
+while [ $num -gt 1 ]
+do
+  fact=$((fact * num))
+  num=$((num - 1))
+done
+
+echo "Factorial of $original_num is $fact"
+
+output:
+[mca@localhost ~]$ vi factorial.sh
+[mca@localhost ~]$ #!/bin/bash
+[mca@localhost ~]$ chmod +x factorial.sh
+[mca@localhost ~]$ ./factorial.sh
+Enter a number
+6
+Factorial of 6 is 720
