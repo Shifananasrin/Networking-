@@ -12,7 +12,7 @@ do
   i=$((i + 1))
 done
 
-echo $sum
+echo " sum is" $sum
 
 
 
@@ -33,4 +33,4 @@ Enter Numbers
 1
 7
 5
-18
+ sum is 18
