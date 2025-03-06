@@ -17,3 +17,16 @@ do
     b=$tmp
 done
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+output:
+[mca@localhost ~]$ vi fibonacciseries.sh
+[mca@localhost ~]$ #!/bin/bash
+[mca@localhost ~]$ chmod +x fibonacciseries.sh
+[mca@localhost ~]$ ./fibonacciseries.sh
+Enter the number of terms:
+13
+Fibonacci Series up to 13  terms:
+0 1 1 2 3 5 8 13 21 34 55 89 144 
+
+
