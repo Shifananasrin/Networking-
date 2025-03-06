@@ -1,0 +1,30 @@
+echo "Enter a number:"
+read num
+
+
+reverse=0
+
+while [ $num -gt 0 ]
+do
+
+    digit=$((num % 10))
+
+
+    reverse=$((reverse * 10 + digit))
+
+
+    num=$((num / 10))
+done
+
+
+echo "The reverse of the number is: $reverse"
+
+_________________________________________________________________________________________________________________________________________________
+output:
+[mca@localhost ~]$ vi reverse_number.sh
+[mca@localhost ~]$ #!/bin/bash
+[mca@localhost ~]$ chmod +x reverse_number.sh
+[mca@localhost ~]$ ./reverse_number.sh
+Enter a number:
+4523
+The reverse of the number is: 3254
