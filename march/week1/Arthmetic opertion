@@ -43,7 +43,7 @@ while true; do
                 echo "Result: $num1 / $num2 = $result"
             fi
             ;;
-        5)
+         5)
             echo "Exiting the program."
             exit 0
             ;;
@@ -53,4 +53,69 @@ while true; do
     esac
 done
 ----------------------------------------------------------------------------------------------------------------
-output
+output[mca@localhost ~]$ vi arthmetic.sh
+[mca@localhost ~]$ #!/bin/bash
+[mca@localhost ~]$ chmod +x  arthmetic.sh
+[mca@localhost ~]$ ./arthmetic.sh
+Choose an operation:
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Exit
+ enter the choice 
+1
+Enter two numbers: 
+ 2 3
+Result: 2 + 3 = 5
+Choose an operation:
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Divisionenter the choice 
+2
+Enter two numbers: 
+ 5 4
+Result: 5 - 4 = 1
+Choose an operation:
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Exit
+ enter the choice 
+3
+Enter two numbers: 
+ 2 3
+Result: 2 * 3 = 6
+Choose an operation:
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Exit
+ enter the choice 
+4
+Enter two numbers: 
+10 5
+Result: 10 / 5 = 2
+Choose an operation:
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Exit
+ enter the choice 
+7
+Invalid choice. Please choose between 1 and 5.
+Choose an operation:
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Exit
+ enter the choice 
+5
+Exiting the program
+
+
