@@ -1,0 +1,22 @@
+echo " enter the file1:"
+read file1
+echo " enter the file2:"
+read file2
+
+if cmp -s "$file1" "$file2"
+then
+        echo "  file is identical"
+else
+        echo " file is not identical"
+fi
+
+------------------------------------------------------------
+   output
+  [mca@localhost ~]$ vi comparefile.sh
+[mca@localhost ~]$ chmod +x comparefile.sh
+[mca@localhost ~]$ ./comparefile.sh
+enter the file1:
+hai.sh
+ enter the file2:
+hello.sh
+	file is identical
