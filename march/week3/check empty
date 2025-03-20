@@ -1,0 +1,16 @@
+echo " enter the filename "
+read filename
+
+if [ -s "$filename" ]; then
+        echo " $filename is  not empty"
+else
+        echo" $filename is  empty"
+fi
+---------------------------------------------------------------
+  output
+  [mca@localhost ~]$ vi checkempty.sh
+[mca@localhost ~]$ chmod +x checkempty.sh
+[mca@localhost ~]$ ./checkempty.sh
+ enter the filename 
+new
+ new is  not empty
