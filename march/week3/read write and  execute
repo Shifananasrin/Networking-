@@ -1,0 +1,30 @@
+echo " enter the filename:"
+read filename
+
+if [ -r "$filename" ]; then
+        echo " $filename is readable"
+else
+        echo " $fileame is not readable"
+fi
+
+if [ -w "$filename" ]; then
+        echo " $filename is writeable"
+else
+        echo " $fileame is not writeable"
+fi
+
+if [ -w "$filename" ]; then
+        echo " $filename is executable"
+else
+        echo " $fileame is not executable"
+fi
+-------------------------------------------------------------------------------------------------
+output
+mca@localhost ~]$ vi readandexecute.sh
+[mca@localhost ~]$ chmod +x readandexecute.sh
+[mca@localhost ~]$ ./readandexecute.sh
+ enter the filename:
+hello.sh
+ hello.sh is readable
+ hello.sh is writeable
+ hello.sh is executable
