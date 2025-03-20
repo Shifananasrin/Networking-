@@ -1,0 +1,18 @@
+#!/bin/bash
+echo "enter the  directory"
+read  user_input
+
+if [ -d "$user_input" ]; then
+  echo "$user_input is a directory."
+else
+  echo "$user_input is not a directory."
+fi
+
+-------------------------------------------------------------------
+output
+[mca@localhost ~]$ vi checkdirectory.sh
+[mca@localhost ~]$ chmod +x checkdirectory.sh
+[mca@localhost ~]$ ./checkdirectory.sh
+enter the  directory
+new
+new is a directory.
