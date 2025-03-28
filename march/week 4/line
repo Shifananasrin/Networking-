@@ -1,0 +1,49 @@
+ echo " Enter the file name"
+    read file
+
+while true; do
+    
+    echo "Choose an operation:"
+    echo "1. To delete particular lina"
+    echo "2. To delete last line"
+    echo "3. To delete the range from x to y"
+    echo "4. To delete a blanck line from file"
+    echo "5. Exit"
+
+    echo " enter the choice "
+    read  choice
+   
+   
+    
+    case $choice in
+        1)
+            echo " enter the line"
+	    read line
+            sed -i " ${line}d " "$file"
+           
+            ;;
+        2)
+	    sed '$d' $file
+	   ;;
+        3)
+            echo " enter the staring line"
+	    read start_line
+	    
+	    echo " enter the last line "
+	    read last_line
+	    sed -i 'start_line,last_lined'$file
+            ;;
+        4)
+	    sed -i '/^$/d' "$file"
+            ;;
+         5)
+            echo "Exiting the program."
+            exit 0
+            ;;
+        *)
+            echo "Invalid choice. Please choose between 1 and 5."
+            ;;
+    esac
+done
+
+
