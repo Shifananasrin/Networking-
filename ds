@@ -1,0 +1,17 @@
+algorithm 13
+
+Define two matrices (matrix1 and matrix2).
+
+Display both matrices.
+
+Compute the sum of matrix1 and matrix2.
+
+Compute the difference (matrix1 - matrix2).
+
+Compute the product (matrix1 multiplied by matrix2).
+
+Compute the transpose of matrix1.
+
+Multiply matrix1 by scalar 2.
+
+Print all the results.
